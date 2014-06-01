@@ -1,0 +1,146 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $base1;
+$headingColor: $base2;
+$headingTextShadow: none;
+$backgroundColor: $base03;
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1.yellow,
+.reveal h2.yellow,
+.reveal h3.yellow,
+.reveal h4.yellow,
+.reveal h5.yellow,
+.reveal h6.yellow{color: $yellow}
+
+.reveal h1.orange,
+.reveal h2.orange,
+.reveal h3.orange,
+.reveal h4.orange,
+.reveal h5.orange,
+.reveal h6.orange{color: $orange}
+
+.reveal h1.red,
+.reveal h2.red,
+.reveal h3.red,
+.reveal h4.red,
+.reveal h5.red,
+.reveal h6.red{color: $red}
+
+.reveal h1.magenta,
+.reveal h2.magenta,
+.reveal h3.magenta,
+.reveal h4.magenta,
+.reveal h5.magenta,
+.reveal h6.magenta{color: $magenta}
+
+.reveal h1.violet,
+.reveal h2.violet,
+.reveal h3.violet,
+.reveal h4.violet,
+.reveal h5.violet,
+.reveal h6.violet{color: $violet}
+
+.reveal h1.blue,
+.reveal h2.blue,
+.reveal h3.blue,
+.reveal h4.blue,
+.reveal h5.blue,
+.reveal h6.blue{color: $blue}
+
+.reveal h1.cyan,
+.reveal h2.cyan,
+.reveal h3.cyan,
+.reveal h4.cyan,
+.reveal h5.cyan,
+.reveal h6.cyan{color: $cyan}
+
+.reveal h1.green,
+.reveal h2.green,
+.reveal h3.green,
+.reveal h4.green,
+.reveal h5.green,
+.reveal h6.green{color: $green}
+
+.yellow{color: $yellow}
+.orange{color: $orange}
+.red{color: $red}
+.magenta{color: $magenta}
+.violet{color: $violet}
+.blue{color: $blue}
+.cyan{color: $cyan}
+.green{color: $green}
+
+.bg_yellow{background-color: $yellow}
+.bg_orange{background-color: $orange}
+.bg_red{background-color: $red}
+.bg_magenta{background-color: $magenta}
+.bg_violet{background-color: $violet}
+.bg_blue{background-color: $blue}
+.bg_cyan{background-color: $cyan}
+.bg_green{background-color: $green}
+
+section.blur{
+	background-image: url("/images/section_bg.png");
+}
